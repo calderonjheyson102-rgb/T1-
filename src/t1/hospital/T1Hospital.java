@@ -4,6 +4,8 @@
  */
 package t1.hospital;
 
+import java.util.Scanner;
+
 /**
  *
  * @author JHEY
@@ -15,6 +17,8 @@ public class T1Hospital {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner sc = new Scanner (System.in);
+        Paciente p1 = new Paciente ();
     }
     
 }
