@@ -16,5 +16,12 @@ public class PacienteControler {
     public void agregarpersona (Paciente nueva ){
         lista.add(nueva);
     }
+    public void listar (){
+        for(int i=0; i<lista.size();i++){
+            Paciente p= lista.get(i);
+            p.verDatos();
+        }
+        
+    }
     
 }
