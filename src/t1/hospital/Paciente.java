@@ -30,6 +30,9 @@ public class Paciente {
         this.fecha_nacimiento = fecha_nacimiento;
         this.alergias = alergias;
     }
+
+    public Paciente() {
+    }
     
     
     
@@ -106,5 +109,15 @@ public class Paciente {
         this.alergias = alergias;
     }
     
-    
+    public void verDatos(){
+        System.out.println("TIPO DOCUMENTO: "+this.tipo_Doc+ 
+                "NUMERO DOCUMENTO: "+this.nro_Doc+
+                "NOMBRE: "+this.nombre+
+                "APELLIDO PATERNO: "+this.apellido_Paterno+
+                "APELLIDO MATERNO: "+this.apellido_Materno+
+                "NUMERO CELULAR: "+this.nro_celular+
+                "CORREO: "+this.correo+
+                "FECHA NACIMIENTO: "+this.fecha_nacimiento+
+                "ALERGIAS: "+this.alergias);
+    }
 }
