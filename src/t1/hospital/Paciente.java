@@ -118,6 +118,9 @@ public class Paciente {
     }
 
     public void setCorreo(String correo) {
+        if (correo == null || !correo.contains("@") || !correo.toLowerCase().endsWith(".com")) {
+            throw new IllegalArgumentException("El correo debe incluir '@' y terminar en '.com'.");
+        }
         this.correo = correo;
     }
 
