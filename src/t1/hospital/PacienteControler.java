@@ -13,4 +13,8 @@ import java.util.ArrayList;
 public class PacienteControler {
     ArrayList<Paciente> lista =new ArrayList ();
     
+    public void agregarpersona (Paciente nueva ){
+        lista.add(nueva);
+    }
+    
 }
