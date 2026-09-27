@@ -107,6 +107,9 @@ public class Paciente {
     }
 
     public void setNro_celular(int nro_celular) {
+        if (nro_celular == null || !nro_celular.matches("\\d{9}")) {
+            throw new IllegalArgumentException("El número de celular debe tener exactamente 9 dígitos.");
+        }
         this.nro_celular = nro_celular;
     }
 
