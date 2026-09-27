@@ -19,6 +19,21 @@ public class Paciente {
     private String fecha_nacimiento;
     private String alergias;
 
+    public Paciente(String tipo_Doc, String nro_Doc, String nombre, String apellido_Paterno, String apellido_Materno, int nro_celular, String correo, String fecha_nacimiento, String alergias) {
+        this.tipo_Doc = tipo_Doc;
+        this.nro_Doc = nro_Doc;
+        this.nombre = nombre;
+        this.apellido_Paterno = apellido_Paterno;
+        this.apellido_Materno = apellido_Materno;
+        this.nro_celular = nro_celular;
+        this.correo = correo;
+        this.fecha_nacimiento = fecha_nacimiento;
+        this.alergias = alergias;
+    }
+    
+    
+    
+
     public String getTipo_Doc() {
         return tipo_Doc;
     }
