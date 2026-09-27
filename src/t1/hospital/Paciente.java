@@ -59,6 +59,22 @@ public class Paciente {
     }
 
     public void setNro_Doc(String nro_Doc) {
+        if (nro_Doc == null || this.tipo_Doc == null) {
+            throw new IllegalArgumentException("Primero define el tipo de documento antes de asignar el número.");
+        }
+        
+        String docClean = nro_Doc.trim();
+
+        if (this.tipo_Doc.equals("DNI")) {
+            if (!docClean.matches("\\d{8}")) {
+                throw new IllegalArgumentException("El DNI debe tener exactamente 8 dígitos numéricos.");
+            }
+        } else if (this.tipo_Doc.equals("CE")) {
+            if (!docClean.matches("[a-zA-Z0-0]{9,12}")) {
+                throw new IllegalArgumentException("El CE debe tener entre 9 y 12 caracteres alfanuméricos.");
+            }
+        }
+        
         this.nro_Doc = nro_Doc;
     }
 
