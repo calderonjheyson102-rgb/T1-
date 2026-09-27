@@ -9,14 +9,15 @@ package t1.hospital;
  * @author JHEY
  */
 public class Paciente {
-    String tipo_Doc;
-    String nro_Doc;
-    String nombre;
-    String apellido_Paterno;
-    String apellido_Materno;
-    int nro_celular;
-    String correo;
-    String fecha_nacimiento;
+    private String tipo_Doc;
+    private String nro_Doc;
+    private String nombre;
+    private String apellido_Paterno;
+    private String apellido_Materno;
+    private int nro_celular;
+    private String correo;
+    private String fecha_nacimiento;
+    private String alergias;
 
     public String getTipo_Doc() {
         return tipo_Doc;
@@ -81,8 +82,14 @@ public class Paciente {
     public void setFecha_nacimiento(String fecha_nacimiento) {
         this.fecha_nacimiento = fecha_nacimiento;
     }
-    
-    
+
+    public String getAlergias() {
+        return alergias;
+    }
+
+    public void setAlergias(String alergias) {
+        this.alergias = alergias;
+    }
     
     
 }
