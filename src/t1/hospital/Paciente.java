@@ -9,5 +9,11 @@ package t1.hospital;
  * @author JHEY
  */
 public class Paciente {
+    String tipo_Doc;
+    String nro_Doc;
+    String nombre;
+    String apellido_Paterno;
+    String apellido_Materno;
+    LocalDate fecha_nacimiento;
     
 }
