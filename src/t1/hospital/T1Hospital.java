@@ -19,6 +19,10 @@ public class T1Hospital {
         // TODO code application logic here
         Scanner sc = new Scanner (System.in);
         Paciente p1 = new Paciente ();
+        
+        String rpta= ("si");
+        PacienteControler control = new PacienteControler();
+        while(rpta.equalsIgnoreCase("si")){
     }
-    
+        
 }
